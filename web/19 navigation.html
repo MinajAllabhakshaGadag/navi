@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <STYle>
+        #nav{
+            background-color: lightpink;
+            border: 2px solid black;
+           /* // to give crct border to the content// */
+            overflow: auto; 
+        }
+        ul{
+            float: right;
+        }
+        /* if we want to remove the underline then we inside the ancher tag we use text decoration property */
+        a{
+            text-decoration: none;
+        }
+    
+        li{
+            /* to the content flow to the left and become horizontal */
+            float: left;
+            /* to remove the bullets */
+            list-style-type: none;
+            /* want to make the box for every single content */
+            border: 2px solid red;
+            /* want to get the space inside the box */
+            padding: 10px;
+            /* want to get space between boxes | to get space outside the box */
+            margin: 10px;
+            /* to get background-color  */
+            background-color: aqua;
+            /* want to box edge as a circle  */
+            border-radius: 50px;
+
+        }
+        #headline{
+            text-align: center;
+            margin: 0;
+            background-color: red;
+            color: yellow;
+        }
+        a:hover{
+            background-color: blue;
+            color: white;
+        }
+    </STYle>
+</head>
+<body>
+        <h1 id="headline">INDIA</h1>
+    
+    <!-- to create box -->
+    <div id="nav">
+        <!-- to create containt -->
+        <ul>
+            <!-- to create superate superate containt ||and|| to create inside containt another containt WE use (./new html folder name) -->
+        <li><a href="./home.html">HOME</a></li>  
+        <li><a href="./aboutus.html">ABOUT US</a></li>
+        <li><a href="./contact.html">CONTACTS</a></li>    
+        <li><a href="./login.html">LOGIN</a></li>
+        </ul>
+    </div>
+    <div id="threebox"></div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #mainbox{
+            border: 2px solid black;
+            /* if we want to exicute single row we use flex property  */
+            display: flex;
+            /* if we want to space in between the box we use Justify-content: as a space-arround */ 
+            /* if we want all the spaces are same width then we use Space-evenly */
+            /* if we want the spaces inbetween boxes then we use Space-between */
+            justify-content: space-between;
+        }
+     #left{
+          background-color: red;
+          height: 100px;
+          width: 30%;
+          /* if we want to red color in second position then we use ORDER property  */
+          order: 2;
+      }
+      #midel{
+        background-color: green;
+          height: 100px;
+          width: 30%;
+          order: 3;
+      }
+      #right{
+          background-color: blue;
+          height: 100px;          
+          width: 30%;
+          order: 1;
+      }
+    
+    </style>
+</head>
+<body>
+    <div id="mainbox">
+        <div id="left"></div>
+        <div id="midel"></div>
+        <div id="right"></div>
+    </div>
+    
+</body>
+</html>

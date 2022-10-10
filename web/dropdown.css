@@ -1,0 +1,24 @@
+#drop ul{
+    list-style-type: none;
+}
+#drop ul li{
+    background-color: rgb(255, 0, 106);
+    width: 200px;
+    border: 2px solid white;
+    height: 50px;
+    /* to move content at middle we use line height */
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}
+#drop ul li:hover{
+    background-color:yellow;
+}
+/* to make sub content as a invissible then we use display property */
+#drop ul ul{
+    display:none;
+}
+/* if we want to visible the content after click the button  */
+#drop ul li:hover ul{
+    display: block;
+}

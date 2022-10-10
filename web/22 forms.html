@@ -1,0 +1,100 @@
+<!-- <input type="text">       display a single line text input; -->
+<!-- <input type="radio">      display a radio button(for selecting one of many choice ) -->
+<!-- <input type="checkbox">   dispaly a check box(for selecting zeroor more of many choice) -->
+<!-- <input type="submit">     for submiting the form  -->
+ <!-- create a form and after submit that form ,where the data will be stored it decides by using action -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        form{
+            border: 2px solid black;
+            padding: 40px;
+            width: 30%;
+            margin: auto;
+            background-image: url(./image/sugandh);
+            background-image: linear-gradient(red pink white);
+            background-color: red;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        input{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <form>
+      <label for="">FIRST NAME:</label>
+      <!-- if we want to make input field as mindatory then we use property called REQUIRED -->
+      <input type="text" required>
+<!-- WANT TO GET SPACE THEN WE USE <BR> TAG -->
+    <br><br>
+      <label for="">LAST NAME:</label>
+      <input type="text" required>
+<br><br>
+<!-- if we want to make in email @ as a mandatory then instead of using input type as a text we use email  -->
+      <label for="">EMAIL:</label>
+      <input type="email" required>
+<br><br>
+<!-- if we want to chose any one in input field then we use text as a REDIO and in for we give one typename and in input name=typename -->
+     <label for="gender">GENDER</label>
+     <input type="radio" name="gender" style="float: none;">MALE
+     <input type="radio" name="gender" style="float: none;">FEMALE
+     <input type="radio" name="gender" style="float: none;">OTHERS
+ <br><br>    
+    <label for="">SUBJECT</label>
+    <input type="checkbox" style="float: none;"> JAVA
+    <input type="checkbox" style="float: none;"> SQL 
+    <input type="checkbox" style="float: none;"> PYTHON
+    <input type="checkbox" style="float: none;"> HTML 
+    <input type="checkbox" style="float: none;"> JSS
+<br><br>
+    <label for="">QUALIFICATION</label>
+<!-- if we want in one option we have many option then we use select clause-->
+    <select name="" id="">
+        <option value="">  </option>
+        <option value="">BE</option>
+        <option value="">B TECH</option>
+        <option value="">ME</option>
+        <option value="">M TECH</option>
+        <option value="">MCA</option>
+        <option value="">LKG</option>
+        <option value="">OTHERS</option>
+    </select>
+    <br><br>
+    <label for="">if you select others</label>
+    <input type="text">
+    <br><br>
+    <!-- if we want the date format then we use type as a date  -->
+    <label for="">DOB</label>
+    <input type="date">
+    <br><br>
+    <!-- if we want the search bar then we use list as cisty and use datalist -->
+   <label for="place">PLACES:</label>
+   <input list="city" >
+   <datalist id="city" name="place">
+    <option value="KARNATAK">KARNATAK</option>
+    <option value="ANDRA">ANDRA</option>
+    <option value="KERALA">KERALA</option>
+    <option value="TAMILNADU">TAMILNADU</option>
+    <option value="MAHARASHTRA">MAHARASHTRA</option>
+    <option value="TELANGAN">TELANGAN</option>
+    <option value="KOLLAM">KOLLAM</option>
+    <option value="DEHLI">DEHLI</option>
+   
+   </datalist>
+   <BR><BR>
+  <label for="">YEAR OF PASSOUT</label>
+<!-- if we wnat to set the number then we use number property  -->
+    <input type="number" min="2013" max="2021">
+    <br><br>
+   <label for="">ADDRESS</label>
+<!-- if we want to get multiple line then we use TEXTAREA tag -->
+      <textarea name="" id="" cols="30" rows="6"></textarea>
+<br> <br>
+<button>SUBMIT</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- <table></table> defines a table. -->
+<!-- <th></th> defines a header cell in a table. -->
+<!-- <tr></tr> defines a row in a table. -->
+<!-- <td></td> defines a cell in a table  -->
+<!-- colspan=it is used to merge the many column into one -->
+<!-- rowspan=it is used to merge the many column into one-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+         }
+         table{
+             width: 50%;
+             /* want to make whole container into a center then  */
+             margin: auto;
+         }
+         th{
+            /* want to get space inside the box */
+            padding: 10px;
+             /* IF WE WANT TO GET MULTIPLE background-color: THEN WE USE background-image: LINEAR-GRADIENT */
+            background-image: linear-gradient(orange,white,green);
+            color: brown;
+         } 
+         td{
+            /* want to make text into the center */
+            text-align: center;
+            padding: 10px;
+            background-color: aqua;
+            color: black;
+         }
+    </style>
+</head>
+<body>
+    <table>
+         <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>CONT NO</th>
+         </tr>
+         <tr>
+            <td>MINAJ</td>
+            <td>22</td>
+            <td>8618647714</td>
+         </tr>
+         <tr>
+            <td>SUMA</td>
+            <td>21</td>
+             <td>7026225339</td>
+        </tr>
+    </table>
+</body>
+</html>

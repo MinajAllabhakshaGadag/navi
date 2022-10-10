@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #mainbox{
+            border: 2px solid black;
+            /* if we want to mention the height of rows  */
+            grid-template-rows:200px 200px ;
+            /* if we wnat to mention the width of the column we use 33.33 or auto */
+            grid-template-columns: auto auto auto;
+            /* to display the multy row  */
+            display: grid;
+            /* if we want space between the column and in between row we use  */
+            grid-row-gap: 50px;
+            grid-column-gap: 50px;
+            /* if we wnat to get space inside the mainbox and sub box we use padding */
+            padding: 50px;
+        }
+        #red{
+            background-color: red;
+        }
+        #green{
+            background-color: green;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #pink{
+            background-color: pink;
+        }
+        #gold{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainbox">
+       <div id="red"></div>
+       <div id="green"></div>
+       <div id="yellow"></div>
+       <div id="blue"></div>
+       <div id="pink"></div>
+       <div id="gold"></div>
+    </div>
+</body>
+</html>
